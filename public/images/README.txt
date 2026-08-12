@@ -1,0 +1,1 @@
+Images in this folder were prepared from the reference images supplied in the chat. Replace them with final licensed brand/product photography before commercial launch.
