@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/blogs/page": "app/blogs/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/home/page": "app/home/page.js",
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js",
+  "/qualities/page": "app/qualities/page.js",
+  "/recipes/page": "app/recipes/page.js"
+}
