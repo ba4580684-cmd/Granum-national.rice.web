@@ -20,10 +20,8 @@ A responsive international-style rice export website built with Next.js App Rout
 
 ## Run
 
-```bash
 npm install
 npm run dev
-```
 
 Then open `http://localhost:3000`.
 

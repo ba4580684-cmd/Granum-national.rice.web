@@ -1,9 +1,8 @@
 {
-  "/about-us/page": "app/about-us/page.js",
-  "/recipes/page": "app/recipes/page.js",
-  "/qualities/page": "app/qualities/page.js",
-  "/blogs/page": "app/blogs/page.js",
   "/home/page": "app/home/page.js",
   "/products/page": "app/products/page.js",
-  "/contact-us/page": "app/contact-us/page.js"
+  "/blogs/page": "app/blogs/page.js",
+  "/recipes/page": "app/recipes/page.js",
+  "/qualities/page": "app/qualities/page.js",
+  "/page": "app/page.js"
 }
