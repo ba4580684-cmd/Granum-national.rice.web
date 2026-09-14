@@ -150,7 +150,7 @@ export default function ContactPage() {
             <strong>RICE</strong>
             <small>EXPORT & SUPPLY</small>
           </div>
-
+ 
         </div>
 
       </section>

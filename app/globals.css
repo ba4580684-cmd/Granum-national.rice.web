@@ -5,9 +5,10 @@
   --green-dark: #A97F2B;
   --green-deep: #071A2D;
   --gold: #C99A3A;
-  --cream: #0E2740;
+  --cream: #F1E9DA;
   --ink: #F5F0E6;
-  --muted: #B8C0C8;
+  --dark-text: #071A2D;
+  --muted: #6E6256;
   --line: rgba(245, 240, 230, .12);
   --white: #fff;
 
@@ -29,9 +30,9 @@ html {
 
 body {
   margin: 0;
-  color: var(--ink);
+  color: var(--dark-text);
   font-family: var(--font-sans);
-  background: var(--green-deep);
+  background: var(--cream);
 }
 
 a {
@@ -62,8 +63,8 @@ textarea {
 ========================= */
 
 .topbar {
-  background: var(--green-deep);
-  color: var(--muted);
+  background: #C9A56A;
+  color: var(--green-deep);
   font-size: 12px;
 }
 
@@ -91,7 +92,8 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(7, 26, 45, .96);
+  background: #C9A56A;
+  color: var(--green-deep);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -107,7 +109,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--gold);
+  color: var(--green-deep);
 }
 
 .logo-symbol,
@@ -133,7 +135,7 @@ textarea {
   display: block;
   font-size: 9px;
   letter-spacing: 4px;
-  color: var(--muted);
+  color: var(--green-deep);
   text-align: center;
 }
 
@@ -367,7 +369,7 @@ textarea {
 ========================= */
 
 .stats-strip {
-  background: #0B2237;
+  background: var(--green-deep);
   border-bottom: 1px solid var(--line);
 }
 
@@ -416,6 +418,7 @@ textarea {
   font-size: 44px;
   line-height: 1.1;
   margin: 0 0 15px;
+  color: var(--dark-text);
 }
 
 .section-title p {
@@ -451,7 +454,7 @@ textarea {
 }
 
 .product-image {
-  background: #0E2740;
+  background: var(--cream);
   position: relative;
   overflow: hidden;
 }
@@ -483,6 +486,7 @@ textarea {
   margin: 0 0 9px;
   font-family: var(--font-serif);
   font-size: 21px;
+  color: var(--dark-text);
 }
 
 .product-body p {
@@ -571,6 +575,7 @@ textarea {
   font-size: 48px;
   line-height: 1.05;
   margin: 0 0 20px;
+  color: var(--dark-text);
 }
 
 .split-copy > p {
@@ -667,7 +672,7 @@ textarea {
 
 .cta-card {
   background: var(--cream);
-  color: var(--ink);
+  color: var(--dark-text);
   padding: 50px 60px;
   display: flex;
   justify-content: space-between;
@@ -680,6 +685,7 @@ textarea {
   font-style: italic;
   font-size: 42px;
   margin: 0 0 8px;
+  color: var(--dark-text);
 }
 
 .cta-card p {
@@ -692,8 +698,8 @@ textarea {
 ========================= */
 
 .footer {
-  background: #051221;
-  color: var(--muted);
+  background: var(--green-deep);
+  color: var(--ink);
 }
 
 .footer-grid {
@@ -720,7 +726,7 @@ textarea {
 .footer p {
   font-size: 13px;
   line-height: 1.7;
-  color: var(--muted);
+  color: var(--ink);
 }
 
 .footer h4 {
@@ -732,7 +738,7 @@ textarea {
   display: block;
   font-size: 13px;
   margin: 10px 0;
-  color: var(--muted);
+  color: var(--ink);
 }
 
 .social-row {
@@ -750,7 +756,7 @@ textarea {
   border-top: 1px solid var(--line);
   padding: 18px 0;
   font-size: 11px;
-  color: var(--muted);
+  color: var(--ink);
 }
 
 /* =========================
@@ -793,6 +799,7 @@ textarea {
   font-family: var(--font-serif);
   font-size: 48px;
   line-height: 1.1;
+  color: var(--dark-text);
 }
 
 .two-panel p {
@@ -821,6 +828,7 @@ textarea {
 
 .value-grid > div {
   background: var(--green-deep);
+  color: var(--ink);
   padding: 35px;
   border-top: 4px solid var(--gold);
 }
@@ -833,6 +841,7 @@ textarea {
 .value-grid h3 {
   font-family: var(--font-serif);
   font-size: 25px;
+  color: var(--ink);
 }
 
 .value-grid p {
@@ -844,6 +853,7 @@ textarea {
   margin-top: 50px;
   padding: 25px 30px;
   background: var(--green-deep);
+  color: var(--ink);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -883,6 +893,7 @@ textarea {
   font-family: var(--font-serif);
   font-size: 48px;
   line-height: 1.1;
+  color: var(--dark-text);
 }
 
 .quality-intro p {
@@ -911,6 +922,7 @@ textarea {
 .quality-grid h3 {
   font-family: var(--font-serif);
   font-size: 24px;
+  color: var(--dark-text);
 }
 
 .quality-grid p {
@@ -967,6 +979,7 @@ textarea {
   font-family: var(--font-serif);
   font-size: 25px;
   margin: 10px 0;
+  color: var(--dark-text);
 }
 
 .recipe-full p,
@@ -1010,6 +1023,7 @@ textarea {
   font-family: var(--font-serif);
   font-size: 29px;
   line-height: 1.15;
+  color: var(--dark-text);
 }
 
 .blog-card p {
@@ -1026,6 +1040,7 @@ textarea {
   position: relative;
   overflow: hidden;
   padding: 45px 0;
+  color: var(--ink);
 }
 
 .entry-wrap {
@@ -1133,6 +1148,7 @@ textarea {
 
 .entry-form-card {
   background: var(--cream);
+  color: var(--dark-text);
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 38px;
@@ -1176,7 +1192,7 @@ textarea {
   width: 100%;
   margin-top: 7px;
   border: 1px solid var(--line);
-  background: #0B2237;
+  background: var(--green-deep);
   padding: 14px;
   border-radius: 4px;
   outline: none;
@@ -1481,6 +1497,7 @@ textarea {
   left: 18px;
   bottom: 18px;
   background: var(--green-deep);
+  color: var(--ink);
   border: 1px solid var(--line);
   padding: 14px 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
@@ -1959,7 +1976,7 @@ textarea {
 
 .luxury-quality-card:hover {
   transform: translateY(-5px);
-  background: #112d47;
+  background: var(--green-deep);
 }
 
 .luxury-quality-card-top {
