@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const initial = {
   fullName: "",
@@ -27,22 +28,42 @@ export default function LeadForm() {
     }));
   }
 
-  function submit(e) {
-    e.preventDefault();
+async function submit(e) {
+  e.preventDefault();
 
-    setError("");
-    setSuccess("");
+  setError("");
+  setSuccess("");
 
-    if (
-      !form.fullName ||
-      !form.phone ||
-      !form.email ||
-      !form.organization ||
-      !form.message
-    ) {
-      setError("Please complete all required fields.");
-      return;
-    }
+  if (
+    !form.fullName ||
+    !form.phone ||
+    !form.email ||
+    !form.organization ||
+    !form.message
+  ) {
+    setError("Please complete all required fields.");
+    return;
+  }
+
+  try {
+    await emailjs.send(
+      "service_yqoox9t",
+      "template_lky4w0u",
+      {
+        fullName: form.fullName,
+        countryCode: form.countryCode,
+        phone: form.phone,
+        email: form.email,
+        organization: form.organization,
+        quantity: form.quantity,
+        packaging: form.packaging,
+        privateLabel: form.privateLabel,
+        message: form.message,
+      },
+      {
+        publicKey: "-Qq5pe-S8mZh9iOd-",
+      }
+    );
 
     localStorage.setItem(
       "granumLead",
@@ -57,8 +78,15 @@ export default function LeadForm() {
     );
 
     setForm(initial);
-  }
+  } catch (error) {
+    console.error("EmailJS Error:", error);
 
+    setError(
+      "Sorry, your requirement could not be sent. Please try again."
+    );
+  }
+}
+   
   return (
     <section className="entry-screen">
       <div className="entry-glow glow-one" />

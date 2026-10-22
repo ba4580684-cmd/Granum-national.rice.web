@@ -139,6 +139,28 @@ textarea {
   text-align: center;
 }
 
+.logo .header-wordmark {
+  color: #172b39;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+
+.logo .header-wordmark b {
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.logo .header-wordmark small {
+  margin-top: 2px;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -698,8 +720,11 @@ textarea {
 ========================= */
 
 .footer {
-  background: var(--green-deep);
-  color: var(--ink);
+  --ink: #172b39;
+  --gold: #172b39;
+  --line: rgba(23, 43, 57, .15);
+  background: var(--cream);
+  color: #172b39;
 }
 
 .footer-grid {
@@ -1346,7 +1371,8 @@ textarea {
 .luxury-blogs-hero,
 .luxury-recipes-hero,
 .luxury-contact-hero,
-.luxury-qualities-hero {
+.luxury-qualities-hero,
+.luxury-terms-hero {
   position: relative;
   overflow: hidden;
 }
@@ -1356,7 +1382,8 @@ textarea {
 .luxury-blogs-hero::after,
 .luxury-recipes-hero::after,
 .luxury-contact-hero::after,
-.luxury-qualities-hero::after {
+.luxury-qualities-hero::after,
+.luxury-terms-hero::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -1477,6 +1504,7 @@ textarea {
 .luxury-image-frame {
   position: relative;
   overflow: hidden;
+  border-radius: 18px;
 }
 
 .luxury-image-frame img {
@@ -2628,5 +2656,213 @@ textarea {
   .luxury-image-frame img,
   .luxury-recipe-full-image img {
     transition: none;
+  }
+}
+
+/* =========================================================
+   FOOTER LEGAL BAR
+========================================================= */
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-legal a {
+  color: var(--ink);
+  opacity: 1;
+  transition: opacity .25s ease, color .25s ease;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus-visible {
+  color: var(--gold);
+  opacity: 1;
+}
+
+/* =========================================================
+   LEGAL PAGES (TERMS / PRIVACY)
+========================================================= */
+
+.legal-page .legal-body {
+  padding: 70px 0 95px;
+}
+
+.legal-wrap {
+  width: min(820px, calc(100% - 40px));
+  margin: auto;
+}
+
+.legal-page {
+  overflow-x: hidden;
+}
+
+.legal-clause + .legal-clause {
+  margin-top: 46px;
+}
+
+.legal-clause-line {
+  width: 46px;
+  height: 2px;
+  margin: 0 0 20px;
+  background: var(--gold);
+}
+
+.legal-wrap h2 {
+  font-family: var(--font-serif);
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 14px;
+  color: var(--dark-text);
+}
+
+.legal-wrap p,
+.legal-wrap li {
+  color: var(--muted);
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+.legal-wrap ul {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.legal-wrap li {
+  margin-bottom: 8px;
+}
+
+.legal-wrap a {
+  color: var(--green-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legal-page .legal-body {
+    padding: 50px 0 70px;
+  }
+
+  .legal-wrap h2 {
+    font-size: 25px;
+  }
+}
+
+/* =========================================================
+   MISSION & VISION
+========================================================= */
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.mv-card {
+  position: relative;
+  padding: 44px 40px;
+  background: var(--green-deep);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform .45s ease, border-color .45s ease;
+}
+
+.mv-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(201, 154, 58, .10), transparent 55%);
+  opacity: 0;
+  transition: opacity .45s ease;
+  pointer-events: none;
+}
+
+.mv-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 154, 58, .45);
+}
+
+.mv-card:hover::after {
+  opacity: 1;
+}
+
+.mv-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.mv-line {
+  width: 46px;
+  height: 2px;
+  margin: 18px 0 22px;
+  background: var(--gold);
+}
+
+.mv-card h3 {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+
+.mv-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+  color: rgba(245, 240, 230, .78);
+}
+
+/* =========================================================
+   LEGAL SUB-LIST (lettered clauses)
+========================================================= */
+
+.legal-sublist {
+  margin: 0 0 16px;
+  padding-left: 26px;
+  list-style: lower-alpha;
+}
+
+.legal-sublist li {
+  margin-bottom: 12px;
+  padding-left: 6px;
+}
+
+.legal-sublist strong {
+  color: var(--dark-text);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mv-card {
+    padding: 36px 30px;
+  }
+
+  .mv-card h3 {
+    font-size: 25px;
   }
 }

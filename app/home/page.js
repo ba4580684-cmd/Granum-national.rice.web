@@ -87,7 +87,7 @@ export default function HomePage() {
               data-aos-duration="1200"
             >
               Every grain.
-              <br />
+              <br />   
               <em>Every celebration.</em>
             </h1>
 

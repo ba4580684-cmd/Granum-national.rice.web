@@ -33,12 +33,17 @@ export default function Footer() {
           <h4>Contact</h4>
           <a href="tel:+447447195805">+44 (0) 7447 195805</a>
           <a href="tel:+447342238038">+44 (0) 7342 238038</a>
-          <a href="mailto:granumglobal@yahoo.co.uk">granumglobal@yahoo.co.uk</a>
+          <a href="mailto:info@granumglobal.co.uk">info@granumglobal.co.uk</a>
           <p>Product of Pakistan • Serving global markets</p>
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="container">© {new Date().getFullYear()} Granum Global. All rights reserved.</div>
+        <div className="container footer-bottom-inner">
+          <span>© {new Date().getFullYear()} Granum Global. All rights reserved.</span>
+          <nav className="footer-legal" aria-label="Legal">
+            <Link href="/terms">Terms &amp; Conditions</Link>
+          </nav>
+        </div>
       </div>
     </footer>
   );

@@ -27,8 +27,8 @@ export default function Header() {
 
           <div className="top-links">
             <a href="tel:+447447195805">+44 (0) 7447 195805</a>
-            <a href="mailto:granumglobal@yahoo.co.uk">
-              granumglobal@yahoo.co.uk
+            <a href="mailto:info@granumglobal.co.uk">
+              info@granumglobal.co.uk
             </a>
             <a href="#facebook">Facebook</a>
             <a href="#instagram">Instagram</a>
@@ -45,7 +45,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
           >
             <span className="logo-symbol">G</span>
-            <span>
+            <span className="header-wordmark">
               <b>GRANUM</b>
               <small>GLOBAL</small>
             </span>

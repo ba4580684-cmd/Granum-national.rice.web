@@ -148,6 +148,66 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ================= MISSION & VISION ================= */}
+      <section className="section mission-vision-section">
+        <div className="container">
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            <SectionTitle
+              eyebrow="OUR PURPOSE"
+              title="Mission & Vision"
+            />
+          </div>
+
+          <div className="mv-grid">
+
+            <article
+              className="mv-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1100"
+            >
+              <span className="mv-label">MISSION</span>
+
+              <div className="mv-line" />
+
+              <h3>Mission Statement</h3>
+
+              <p>
+                To connect global markets with premium-quality agricultural
+                commodities through transparent, reliable, and efficient supply
+                chain solutions, ensuring consistent value and trust for our
+                international partners.
+              </p>
+            </article>
+
+            <article
+              className="mv-card"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="1100"
+            >
+              <span className="mv-label">VISION</span>
+
+              <div className="mv-line" />
+
+              <h3>Vision Statement</h3>
+
+              <p>
+                To be a globally recognized leader in commodity trading,
+                distinguished by our commitment to quality, sustainable trade
+                practices, and enduring relationships across the international
+                marketplace.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
       {/* ================= VALUES ================= */}
       <section className="cream-section luxury-values-section">
         <div className="container">
