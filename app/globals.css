@@ -2122,11 +2122,21 @@ textarea {
 }
 
 /* =========================
-   AOS — UNCHANGED
+   SCROLL ANIMATIONS
 ========================= */
 
-[data-aos] {
-  will-change: transform, opacity;
+/* Keep content readable before hydration and when JavaScript is unavailable. */
+body:not([data-aos-duration]) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos][data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* =========================================================

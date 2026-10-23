@@ -1,9 +1,6 @@
 
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Link from "next/link";
 
 const posts = [
@@ -22,15 +19,6 @@ const posts = [
 ];
 
 export default function BlogsPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80,
-      mirror: false,
-    });
-  }, []);
 
   return (
     <main className="blogs-page">

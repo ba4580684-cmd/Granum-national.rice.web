@@ -5,9 +5,6 @@
 import ResponsiveImage from "@/components/ResponsiveImage";
 
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Link from "next/link";
 
 const qualities = [
@@ -38,15 +35,6 @@ const qualities = [
 ];
 
 export default function QualitiesPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80,
-      mirror: false,
-    });
-  }, []);
 
   return (
     <main className="qualities-page">

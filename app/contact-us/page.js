@@ -5,21 +5,9 @@
 
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import LeadForm from "@/components/LeadForm";
 
 export default function ContactPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80,
-      mirror: false,
-    });
-  }, []);
 
   return (
     <main className="contact-page">
