@@ -27,8 +27,8 @@ export default function Header() {
 
           <div className="top-links">
             <a href="tel:+447447195805">+44 (0) 7447 195805</a>
-            <a href="mailto:info@granumglobal.co.uk">
-              info@granumglobal.co.uk
+            <a href="mailto:info@granumglobal.com">
+              info@granumglobal.com
             </a>
             <a href="#facebook">Facebook</a>
             <a href="#instagram">Instagram</a>

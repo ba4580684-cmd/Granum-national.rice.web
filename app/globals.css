@@ -35,6 +35,12 @@ body {
   background: var(--cream);
 }
 
+/* Use the home hero's serif heading style throughout the app. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
 /* Keep off-screen entrance animations inside the page width. */
 body > main {
   overflow-x: clip;
@@ -148,6 +154,10 @@ textarea {
   color: #172b39;
   font-family: Georgia, "Times New Roman", serif;
   text-align: center;
+}
+
+.footer-logo b {
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 .logo .header-wordmark b {

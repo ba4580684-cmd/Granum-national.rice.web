@@ -33,7 +33,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <a href="tel:+447447195805">+44 (0) 7447 195805</a>
           <a href="tel:+447342238038">+44 (0) 7342 238038</a>
-          <a href="mailto:info@granumglobal.co.uk">info@granumglobal.co.uk</a>
+          <a href="mailto:info@granumglobal.com">info@granumglobal.com</a>
           <p>Product of Pakistan • Serving global markets</p>
         </div>
       </div>
