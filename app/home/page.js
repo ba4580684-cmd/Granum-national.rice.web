@@ -1,6 +1,9 @@
 
 "use client";
 
+import ResponsiveImage from "@/components/ResponsiveImage";
+
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -140,8 +143,10 @@ export default function HomePage() {
             data-aos-delay="200"
           >
             <div className="luxury-image-frame">
-              <img
+              <ResponsiveImage
                 src="/images/granum-campaign.png"
+                loading="eager"
+                fetchPriority="high"
                 alt="Granum Global premium Pakistani rice"
               />
             </div>
@@ -249,14 +254,14 @@ export default function HomePage() {
             data-aos-duration="1300"
           >
             <div className="luxury-main-image">
-              <img
+              <ResponsiveImage
                 src="/images/rice-gallery-1.jpg"
                 alt="Premium rice grains"
               />
             </div>
 
             <div className="luxury-small-image">
-              <img
+              <ResponsiveImage
                 src="/images/rice-gallery-2.jpg"
                 alt="Cooked long grain rice"
               />
@@ -394,7 +399,7 @@ export default function HomePage() {
                 data-aos-delay={index * 150}
               >
                 <div className="luxury-recipe-image">
-                  <img src={image} alt={name} />
+                  <ResponsiveImage src={image} alt={name} />
 
                   <span className="luxury-recipe-arrow">
                     ↗

@@ -1,8 +1,10 @@
+import ResponsiveImage from "@/components/ResponsiveImage";
+
 export default function ProductCard({ image, category, name, description }) {
   return (
     <article className="product-card">
       <div className="product-image">
-        <img src={image} alt={name} />
+        <ResponsiveImage src={image} alt={name} sizes="(max-width: 760px) calc(100vw - 28px), (max-width: 1000px) 50vw, 295px" />
         <span>{category}</span>
       </div>
       <div className="product-body">

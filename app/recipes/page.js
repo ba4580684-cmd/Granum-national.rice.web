@@ -1,6 +1,9 @@
 
 "use client";
 
+import ResponsiveImage from "@/components/ResponsiveImage";
+
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -145,7 +148,7 @@ export default function RecipesPage() {
                 {/* Image */}
                 <div className="luxury-recipe-full-image">
 
-                  <img
+                  <ResponsiveImage
                     src={img}
                     alt={title}
                   />

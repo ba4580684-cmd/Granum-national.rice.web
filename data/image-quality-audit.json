@@ -1,0 +1,142 @@
+[
+  {
+    "file": "granum-campaign.png",
+    "originalWidth": 882,
+    "originalHeight": 1280,
+    "sourceWidth": 882,
+    "sourceHeight": 1280,
+    "recreated": false,
+    "masterWidth": 2048,
+    "masterHeight": 2972
+  },
+  {
+    "file": "granum-label.png",
+    "originalWidth": 1101,
+    "originalHeight": 1428,
+    "sourceWidth": 1101,
+    "sourceHeight": 1428,
+    "recreated": false,
+    "masterWidth": 2048,
+    "masterHeight": 2656
+  },
+  {
+    "file": "recipe-1.jpg",
+    "originalWidth": 180,
+    "originalHeight": 155,
+    "sourceWidth": 1340,
+    "sourceHeight": 1174,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1764
+  },
+  {
+    "file": "recipe-2.jpg",
+    "originalWidth": 180,
+    "originalHeight": 155,
+    "sourceWidth": 1345,
+    "sourceHeight": 1169,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1764
+  },
+  {
+    "file": "recipe-3.jpg",
+    "originalWidth": 180,
+    "originalHeight": 155,
+    "sourceWidth": 1345,
+    "sourceHeight": 1169,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1764
+  },
+  {
+    "file": "recipe-4.jpg",
+    "originalWidth": 180,
+    "originalHeight": 160,
+    "sourceWidth": 1345,
+    "sourceHeight": 1169,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1820
+  },
+  {
+    "file": "recipe-5.jpg",
+    "originalWidth": 180,
+    "originalHeight": 160,
+    "sourceWidth": 1345,
+    "sourceHeight": 1169,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1820
+  },
+  {
+    "file": "recipe-6.jpg",
+    "originalWidth": 180,
+    "originalHeight": 160,
+    "sourceWidth": 1345,
+    "sourceHeight": 1169,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1820
+  },
+  {
+    "file": "rice-gallery-1.jpg",
+    "originalWidth": 460,
+    "originalHeight": 405,
+    "sourceWidth": 1345,
+    "sourceHeight": 1170,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1803
+  },
+  {
+    "file": "rice-gallery-2.jpg",
+    "originalWidth": 455,
+    "originalHeight": 405,
+    "sourceWidth": 1345,
+    "sourceHeight": 1169,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 1823
+  },
+  {
+    "file": "rice-quality-1.jpg",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 2048
+  },
+  {
+    "file": "rice-quality-2.jpg",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 2048
+  },
+  {
+    "file": "rice-quality-3.jpg",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 2048
+  },
+  {
+    "file": "rice-quality-4.jpg",
+    "originalWidth": 1254,
+    "originalHeight": 1254,
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "recreated": true,
+    "masterWidth": 2048,
+    "masterHeight": 2048
+  }
+]

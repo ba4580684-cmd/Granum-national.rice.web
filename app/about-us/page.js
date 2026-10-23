@@ -2,6 +2,9 @@
 
 "use client";
 
+import ResponsiveImage from "@/components/ResponsiveImage";
+
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -128,7 +131,7 @@ export default function AboutPage() {
             data-aos-delay="150"
           >
             <div className="luxury-image-frame">
-              <img
+              <ResponsiveImage
                 src="/images/granum-label.png"
                 alt="Granum Global rice packaging"
               />

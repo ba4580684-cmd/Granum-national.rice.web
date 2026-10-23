@@ -55,11 +55,13 @@ export default function Header() {
             className="mobile-menu"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="primary-navigation"
           >
             {open ? "✕" : "☰"}
           </button>
 
-          <nav className={open ? "nav open" : "nav"}>
+          <nav id="primary-navigation" aria-label="Main navigation" className={open ? "nav open" : "nav"}>
 
             {links.map(([label, href]) => (
               <Link

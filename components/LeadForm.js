@@ -1,6 +1,9 @@
 
 "use client";
 
+import ResponsiveImage from "@/components/ResponsiveImage";
+
+
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -116,7 +119,7 @@ async function submit(e) {
           </p>
 
           <div className="entry-image-card">
-            <img
+            <ResponsiveImage
               src="/images/granum-campaign.png"
               alt="Granum Global premium rice campaign"
             />

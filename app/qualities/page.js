@@ -2,6 +2,9 @@
 
 "use client";
 
+import ResponsiveImage from "@/components/ResponsiveImage";
+
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -113,7 +116,7 @@ export default function QualitiesPage() {
               data-aos-duration="1300"
              >
             <div className="luxury-image-frame">
-                <img
+                <ResponsiveImage
                  src="/images/granum-campaign.png"
                  alt="Granum premium rice"
                />

@@ -35,6 +35,11 @@ body {
   background: var(--cream);
 }
 
+/* Keep off-screen entrance animations inside the page width. */
+body > main {
+  overflow-x: clip;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -966,7 +971,7 @@ textarea {
       rgba(7, 26, 45, .85),
       rgba(7, 26, 45, .85)
     ),
-    url("/images/rice-gallery-2.jpg") center center / 100% auto no-repeat;
+    image-set(url("/images/hd/rice-gallery-2-960.webp") 1x, url("/images/hd/rice-gallery-2-1920.webp") 2x) center center / 100% auto no-repeat;
   background-color: var(--green-deep);
 }
 
@@ -1077,6 +1082,18 @@ textarea {
   align-items: center;
   position: relative;
   z-index: 2;
+}
+
+.entry-wrap > * {
+  min-width: 0;
+}
+
+.hero-copy > p,
+.hero-trust,
+.entry-copy,
+.brand-lockup span,
+.inner-hero p {
+  color: rgba(245, 240, 230, .78);
 }
 
 .entry-brand {
@@ -1203,6 +1220,7 @@ textarea {
 }
 
 .entry-form-card label {
+  min-width: 0;
   display: block;
   font-size: 11px;
   font-weight: 800;
@@ -1213,6 +1231,8 @@ textarea {
 .entry-form-card input,
 .entry-form-card select,
 .entry-form-card textarea {
+  min-width: 0;
+  font-size: 16px;
   display: block;
   width: 100%;
   margin-top: 7px;
@@ -2143,6 +2163,51 @@ textarea {
 
 @media (max-width: 1000px) {
 
+  .topbar-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-block: 8px;
+  }
+
+  .mobile-menu {
+    display: block;
+    color: var(--green-deep);
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: var(--green-deep);
+    color: var(--ink);
+    flex-direction: column;
+    align-items: stretch;
+    max-height: calc(100dvh - 78px);
+    overflow-y: auto;
+    box-shadow: 0 15px 30px #0004;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 12px;
+  }
+
+  .nav-cta {
+    text-align: center;
+  }
+
+  .entry-wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .nav {
     gap: 14px;
   }
@@ -2224,7 +2289,7 @@ textarea {
 
   .mobile-menu {
     display: block;
-    color: var(--gold);
+    color: var(--green-deep);
   }
 
   .nav {
@@ -2282,7 +2347,7 @@ textarea {
   .two-panel,
   .quality-intro,
   .entry-wrap {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 35px;
   }
 
