@@ -1,11 +1,12 @@
 import Link from "next/link";
+import BrandLogo from "@/components/BrandLogo";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-grid">
         <div>
-          <div className="footer-logo"><span>G</span><b>GRANUM GLOBAL</b></div>
+          <div className="footer-brand"><BrandLogo /></div>
           <p>
             Harvesting connectivity. Sustaining growth. Premium Pakistani rice
             for importers, distributors, wholesalers and private-label partners.
@@ -33,7 +34,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <a href="tel:+447447195805">+44 (0) 7447 195805</a>
           <a href="tel:+447342238038">+44 (0) 7342 238038</a>
-          <a href="mailto:info@granumglobal.com">info@granumglobal.com</a>
+          <a href="mailto:granumglobal@yahoo.com">granumglobal@yahoo.com</a>
           <p>Product of Pakistan • Serving global markets</p>
         </div>
       </div>

@@ -123,6 +123,69 @@ textarea {
   color: var(--green-deep);
 }
 
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #071A2D;
+}
+
+.brand-emblem {
+  display: block;
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+}
+
+.brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.brand-name {
+  font-size: 29px;
+}
+
+.brand-global {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.brand-wheat {
+  width: 38px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.footer-brand {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 450px) {
+  .brand-emblem {
+    width: 54px;
+    height: 54px;
+  }
+
+  .brand-name {
+    font-size: 26px;
+  }
+
+  .brand-global {
+    font-size: 16px;
+  }
+}
+
 .logo-symbol,
 .footer-logo span {
   width: 42px;

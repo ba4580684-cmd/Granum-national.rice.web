@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import BrandLogo from "@/components/BrandLogo";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -27,8 +28,8 @@ export default function Header() {
 
           <div className="top-links">
             <a href="tel:+447447195805">+44 (0) 7447 195805</a>
-            <a href="mailto:info@granumglobal.com">
-              info@granumglobal.com
+            <a href="mailto:granumglobal@yahoo.com">
+              granumglobal@yahoo.com
             </a>
             <a href="#facebook">Facebook</a>
             <a href="#instagram">Instagram</a>
@@ -44,11 +45,7 @@ export default function Header() {
             className="logo"
             onClick={() => setOpen(false)}
           >
-            <span className="logo-symbol">G</span>
-            <span className="header-wordmark">
-              <b>GRANUM</b>
-              <small>GLOBAL</small>
-            </span>
+            <BrandLogo />
           </Link>
 
           <button

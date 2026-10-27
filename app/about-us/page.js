@@ -120,7 +120,7 @@ export default function AboutPage() {
           >
             <div className="luxury-image-frame">
               <ResponsiveImage
-                src="/images/granum-label.png"
+                src="/images/granum-about-front-clean.png"
                 alt="Granum Global rice packaging"
               />
             </div>
