@@ -82,5 +82,11 @@
     "srcSet": "/images/hd/rice-quality-4-320.webp 320w, /images/hd/rice-quality-4-640.webp 640w, /images/hd/rice-quality-4-960.webp 960w, /images/hd/rice-quality-4-1280.webp 1280w, /images/hd/rice-quality-4-1920.webp 1920w, /images/hd/rice-quality-4-2048.webp 2048w",
     "width": 2048,
     "height": 2048
+  },
+  "/images/granum-campaign-updated.png": {
+    "src": "/images/hd/granum-campaign-updated-1280.webp",
+    "srcSet": "/images/hd/granum-campaign-updated-320.webp 320w, /images/hd/granum-campaign-updated-640.webp 640w, /images/hd/granum-campaign-updated-960.webp 960w, /images/hd/granum-campaign-updated-1108.webp 1108w, /images/hd/granum-campaign-updated-1280.webp 1280w",
+    "width": 1108,
+    "height": 1420
   }
 }

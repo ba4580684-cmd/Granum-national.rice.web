@@ -74,7 +74,7 @@ textarea {
 ========================= */
 
 .topbar {
-  background: #C9A56A;
+  background: #E5D0AA;
   color: var(--green-deep);
   font-size: 12px;
 }
@@ -103,7 +103,7 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: #C9A56A;
+  background: #E5D0AA;
   color: var(--green-deep);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
@@ -128,7 +128,7 @@ textarea {
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
-  color: #071A2D;
+  color: #051836;
 }
 
 .brand-emblem {
@@ -163,7 +163,7 @@ textarea {
 
 .brand-wheat {
   width: 38px;
-  height: 16px;
+  height: 19px;
   flex-shrink: 0;
 }
 
@@ -3013,4 +3013,13 @@ body:not([data-aos-duration]) [data-aos] {
   .mv-card h3 {
     font-size: 25px;
   }
+}
+
+.brand-global-image {
+  display: block;
+  width: 172px;
+  height: auto;
+}
+@media (max-width: 450px) {
+  .brand-global-image { width: 154px; }
 }
