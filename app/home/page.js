@@ -132,7 +132,7 @@ export default function HomePage() {
           >
             <div className="luxury-image-frame">
               <ResponsiveImage
-                src="/images/granum-campaign-updated.png"
+                src="/images/granum-campaign-borderless.png"
                 loading="eager"
                 fetchPriority="high"
                 alt="Granum Global premium Pakistani rice"
